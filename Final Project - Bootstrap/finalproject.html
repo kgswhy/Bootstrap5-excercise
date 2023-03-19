@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+      <div class="container-fluid ">
+        <a class="navbar-brand" href="#">Pariwisata</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Beranda</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Destinasi
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#raja">Raja Ampat</a></li>
+                <li><a class="dropdown-item" href="#bali">Bali (GWK)</a></li>
+                <li><a class="dropdown-item" href="#yogya">Yogyakarta</a></li>
+                <li><a class="dropdown-item" href="#jkt">Jakarta</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Lebih banyak</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Daftarkan Dirimu</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Kami tidak akan menyebarkan data</div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Setuju mengikuti syarat yang ada</label>
+                      </div>
+                      <button type="submit" class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Submit</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Terdaftar !</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    Selamat anda telah terdaftar, silakan memilih destinasi wisata anda
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Daftar</a>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/carousel (1).svg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/carousel (2).svg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/carousel (3).svg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Akhir Navbar -->
+
+    <!-- Konten -->
+    <div class="container">
+      <div class="row p-4 bg-light">
+        <div class="text-center">
+          <h4><strong>Wisata Kami</strong></h4>
+        </div>
+      </div>
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-10">
+            <div class="card" id="raja" style="width: 18rem;">
+              <img src="./img/card (1).svg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Raja Ampat</h5>
+                <p class="card-text"> Area geografis sebagai lokasi yang dapat menarik wisatawan untuk tinggal secara sementara<br> <br>
+                <span><b>Rp.- 20.000.000</b></span></p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-10">
+            <div class="card" id="bali" style="width: 18rem;">
+              <img src="./img/card (2).svg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Bali (GWK)</h5>
+                <p class="card-text">
+                  Area geografis sebagai lokasi yang dapat menarik wisatawan untuk tinggal secara sementara<br> <br>
+                <span><b>Rp.- 40.000.000</b></span></p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-10">
+            <div class="card" id="yogya" style="width: 18rem;">
+              <img src="./img/card (3).svg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Yogyakarta</h5>
+                <p class="card-text">
+                  Area geografis sebagai lokasi yang dapat menarik wisatawan untuk tinggal secara sementara<br> <br>
+                <span><b>Rp.-15.000.000</b></span></p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-10">
+            <div class="card" id="jkt" style="width: 18rem;">
+              <img src="./img/card (4).svg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Jakarta</h5>
+                <p class="card-text">
+                  Area geografis sebagai lokasi yang dapat menarik wisatawan untuk tinggal secara sementara<br> <br>
+                <span><b>Rp.- 50.000.000</b></span></p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      </div>
+      
+    </div>
+    <div class="container">
+      <div class="row p-4 bg-light">
+        <div class="text-center">
+          <h4><strong>Alamat</strong></h4>
+        </div>
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+           
+            <th scope="col"><b>Tour Agent</b></th>
+            <th scope="col">Alamat</th>
+            <th scope="col">Kontak</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+           
+            <td>Samawa Tour</td>
+            <td>Jl. Kemang Raya No. 45B</td>
+            <td>021-889705</td>
+            
+          </tr>
+          <tr>
+           
+            <td>Hello Tiur</td>
+            <td>Jl. Jendral Sudirman 155C</td>
+            <td>021-342770</td>
+       
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <!-- Akhir konten -->
+  
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
